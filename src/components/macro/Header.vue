@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-logo">
-                    <img class="logo" src="../../assets/images/logo_seo_w_2x.png" alt="AvadaSEO small logo">
+                    <img class="logo" src="../../assets/images/logo_seo_w_2x.png" alt="AvadaSEO header logo">
                 </div>
                 <div class="header-menu">
                     <nav class="header-nav">
@@ -67,10 +67,7 @@ export default {
                 font-weight: 400;
                 .link {
                     display: flex;
-                    &:hover {
-                        color: $Yellow_Orange;
-                    }
-                    &.selected {
+                    &:hover, &.selected {
                         color: $Yellow_Orange;
                     }
                 }

@@ -2,7 +2,7 @@
     <section>
         <div class="cta">
             <div class="section-title">
-                <h2 class="title">start your free consultation</h2>
+                <h2 class="title">Start Your Free Consultation</h2>
                 <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
             <a href="#" class="button">Contact us now</a>
