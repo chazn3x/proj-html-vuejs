@@ -1,12 +1,12 @@
 <template>
-    <header>
+    <header class="header">
         <div class="container">
-            <div class="header">
-                <div class="header__logo">
-                    <img src="../../assets/images/logo_seo_w_1x.png" alt="">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <img class="logo" src="../../assets/images/logo_seo_w_2x.png" alt="AvadaSEO small logo">
                 </div>
-                <div class="header__menu">
-                    <nav class="header__nav">
+                <div class="header-menu">
+                    <nav class="header-nav">
                         <ul class="list">
                             <li class="item" v-for="(link, index) in links" :key="index">
                                 <a class="link" :class="{'selected' : link.selected}" :href="link.link" :title="link.name">
@@ -70,15 +70,28 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/style/partials/variables.scss';
+@import '../../assets/style/mixins/mixin.scss';
+@include button;
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 90px;
-    &__nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &-wrapper {
         display: flex;
         align-items: center;
-        height: inherit;
+        justify-content: space-between;
+        height: 90px;
+    }
+    &-logo {
+        height: 40px;
+        .logo {
+            height: 100%;
+        }
+    }
+    &-nav {
+        display: flex;
+        align-items: center;
         .list {
             display: flex;
             align-items: center;
@@ -108,6 +121,9 @@ export default {
         }
         .button {
             background-color: $Yellow_Orange;
+            &:hover {
+                background-color: $Tulip_Tree-light-vibrant;
+            }
         }
     }
 }

@@ -1,0 +1,14 @@
+@mixin button { 
+    .button {
+        padding: .8rem 2.2rem;
+        text-transform: uppercase;
+        color: white;
+        border-color: transparent;
+        background: none;
+        box-shadow: none;
+        border-radius: 2rem;
+        font-weight: 800;
+        cursor: pointer;
+        transition: background-color .4s, opacity .4s;
+    }
+}
