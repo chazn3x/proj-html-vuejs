@@ -5,6 +5,7 @@
             <Agency/>
             <Services/>
             <Work/>
+            <Plans/>
         </div>
     </main>
 </template>
@@ -14,13 +15,15 @@ import Hero from '../elements/Hero.vue'
 import Agency from '../sections/Agency.vue'
 import Services from '../sections/Services.vue'
 import Work from '../sections/Work.vue'
+import Plans from '../sections/Plans.vue'
 export default {
     name: 'Main',
     components: {
         Hero,
         Agency,
         Services,
-        Work
+        Work,
+        Plans
     }
 }
 </script>

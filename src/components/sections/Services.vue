@@ -67,6 +67,7 @@ export default {
 section {
     background: $Deep_Cove url(../../assets/images/pattern_background.png);
     background-size: cover;
+    background-position: center;
 }
 .services {
     padding: 100px 0 150px;
