@@ -68,7 +68,7 @@ export default {
 @include sectionTitle;
 @include button;
 .work {
-    margin: 100px;
+    margin: 100px 0;
     text-align: center;
     .section-title .text {
         color: $Scorpion;
