@@ -12,3 +12,19 @@
         transition: background-color .4s, opacity .4s;
     }
 }
+
+@mixin sectionTitle {
+    .section-title {
+        margin: 0 auto;
+        max-width: 50%;
+        text-align: center;
+        .title {
+            margin-bottom: 2rem;
+        }
+        .text {
+            font-size: 1.3rem;
+            line-height: 2.4rem;
+            color: $Scorpion;
+        }
+    }
+}

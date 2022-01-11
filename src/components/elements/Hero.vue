@@ -51,6 +51,8 @@ export default {
         color: white;
         .text {
             margin: 2rem 0;
+            font-size: 1.5rem;
+            line-height: 2.4rem;
         }
         .button:first-of-type {
             background-color: $Yellow_Orange;
