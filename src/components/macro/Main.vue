@@ -8,6 +8,7 @@
             <Plans/>
             <News/>
             <Clients/>
+            <CallToAction/>
         </div>
     </main>
 </template>
@@ -20,6 +21,7 @@ import Work from '../sections/Work.vue'
 import Plans from '../sections/Plans.vue'
 import News from '../sections/News.vue'
 import Clients from '../sections/Feedback.vue'
+import CallToAction from '../sections/CallToAction.vue'
 export default {
     name: 'Main',
     components: {
@@ -29,7 +31,8 @@ export default {
         Work,
         Plans,
         News,
-        Clients
+        Clients,
+        CallToAction
     }
 }
 </script>
