@@ -2,7 +2,7 @@
     <section class="container">
         <div class="agency">
             <div class="section-title">
-                <h2 class="title">Meet The New Agencv SEO Template From The Avada Team</h2>
+                <h2 class="title">Meet The New Agency SEO Template From The Avada Team</h2>
                 <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
             <div class="cards">

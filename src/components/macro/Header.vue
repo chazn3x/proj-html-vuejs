@@ -9,15 +9,15 @@
                     <nav class="header-nav">
                         <ul class="list">
                             <li class="item" v-for="(link, index) in links" :key="index">
-                                <a class="link" :class="{'selected' : link.selected}" :href="link.link" :title="link.name">
+                                <a v-if="!link.button" class="link" :class="{'selected' : link.selected}" :href="link.link" :title="link.name">
                                     {{link.name}}
                                     <div class="apply" v-if="link.apply">Apply</div>
                                 </a>
+                                <a v-else class="button" :href="link.link" :title="link.name">
+                                    {{link.name}}
+                                </a>
                             </li>
                         </ul>
-                        <button class="button">
-                            Get in touch now
-                        </button>
                     </nav>
                 </div>
             </div>
@@ -28,42 +28,8 @@
 <script>
 export default {
     name: 'Header',
-    data() {
-        return {
-            links: [
-                {
-                    name: 'Home',
-                    link: '#',
-                    selected: true,
-                },
-                {
-                    name: 'Who We Are',
-                    link: '#',
-                    selected: false,
-                },
-                {
-                    name: 'What We Do',
-                    link: '#',
-                    selected: false,
-                },
-                {
-                    name: 'Where We Work',
-                    link: '#',
-                    selected: false,
-                },
-                {
-                    name: 'Careers',
-                    link: '#',
-                    selected: false,
-                    apply: true
-                },
-                {
-                    name: 'News',
-                    link: '#',
-                    selected: false,
-                },
-            ]
-        }
+    props: {
+        links: Array
     }
 }
 </script>
@@ -117,12 +83,12 @@ export default {
                     text-transform: uppercase;
                     font-size: .8rem;
                 }
-            }
-        }
-        .button {
-            background-color: $Yellow_Orange;
-            &:hover {
-                background-color: $Tulip_Tree-light-vibrant;
+                .button {
+                    background-color: $Yellow_Orange;
+                    &:hover {
+                        background-color: $Tulip_Tree-light-vibrant;
+                    }
+                }
             }
         }
     }

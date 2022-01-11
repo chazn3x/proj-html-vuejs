@@ -1,5 +1,6 @@
 @mixin button { 
     .button {
+        display: inline-block;
         padding: .8rem 2.2rem;
         text-transform: uppercase;
         color: white;
