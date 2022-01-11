@@ -65,6 +65,9 @@ export default {
 @include sectionTitle;
 .agency {
     margin-top: 100px;
+    .section-title .text {
+        color: $Scorpion;
+    } 
     .cards {
         display: grid;
         grid-template-columns: repeat(3, 32%);
@@ -77,14 +80,14 @@ export default {
             padding: 3rem 1.5rem;
             .top {
                 transition: color .2s;
+                .icon {
+                    color: $Yellow_Orange;
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                }
                 &:hover {
                     color: $Yellow_Orange;
                 }
-            }
-            .icon {
-                color: $Yellow_Orange;
-                font-size: 2rem;
-                margin-bottom: 2rem;
             }
             .text {
                 font-size: 1.2rem;
@@ -97,6 +100,7 @@ export default {
     .desktop-img {
         width: 100%;
         .image {
+            display: block;
             width: 100%;
         }
     }
