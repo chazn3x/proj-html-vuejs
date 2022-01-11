@@ -97,6 +97,7 @@ section {
         grid-template-columns: repeat(4, 24%);
         justify-content: space-between;
         margin-top: 100px;
+        cursor: pointer;
         .card {
             width: 100%;
             background-color: $Alabaster;

@@ -6,6 +6,7 @@
             <Services/>
             <Work/>
             <Plans/>
+            <News/>
         </div>
     </main>
 </template>
@@ -16,6 +17,7 @@ import Agency from '../sections/Agency.vue'
 import Services from '../sections/Services.vue'
 import Work from '../sections/Work.vue'
 import Plans from '../sections/Plans.vue'
+import News from '../sections/News.vue'
 export default {
     name: 'Main',
     components: {
@@ -23,7 +25,8 @@ export default {
         Agency,
         Services,
         Work,
-        Plans
+        Plans,
+        News
     }
 }
 </script>
